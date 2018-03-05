@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Animated } from 'react-native';
 
-class Ball extends Component {
+export default class Ball extends Component {
   componentWillMount() {
     this.position = new Animated.ValueXY(0, 0);
     Animated.spring(this.position, {
@@ -28,4 +28,4 @@ const styles = {
   }
 };
 
-export default Ball;
+
